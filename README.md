@@ -3,7 +3,10 @@
 相比较于gpt3.5 和gpt-4-turbo，gpt-4o模型，很重要的一个更新就是变更了编码集。
 从原来的cl100k_base 变成了o200k_base。
 
-Try a pip install --upgrade tiktoken against your python environment.
+Try a pip install --upgrade tiktoken 
+
+against your python environment.
+
 可以得到，最新的embedding 模型也是cl100k_base.
 
 MODEL_TO_ENCODING: dict[str, str] = {
