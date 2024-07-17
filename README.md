@@ -3,7 +3,31 @@
 相比较于gpt3.5 和gpt-4-turbo，gpt-4o模型，很重要的一个更新就是变更了编码集。
 从原来的cl100k_base 变成了o200k_base。
 
-随着编码集的提升，对应的语言的token数量都有所优化减少，特别是小语种优化的程度更多。
+Try a pip install --upgrade tiktoken against your python environment.
+可以得到，最新的embedding 模型也是cl100k_base.
+
+MODEL_TO_ENCODING: dict[str, str] = {
+    # chat
+    "gpt-4": "cl100k_base",
+    "gpt-3.5-turbo": "cl100k_base",
+    "gpt-3.5": "cl100k_base",  # Common shorthand
+    "gpt-35-turbo": "cl100k_base",  # Azure deployment name
+    # base
+    "davinci-002": "cl100k_base",
+    "babbage-002": "cl100k_base",
+    # embeddings
+    "text-embedding-ada-002": "cl100k_base",
+    "text-embedding-3-small": "cl100k_base",
+    "text-embedding-3-large": "cl100k_base",
+    # DEPRECATED MODELS
+    # text (DEPRECATED)
+    "text-davinci-003": "p50k_base",
+    "text-davinci-002": "p50k_base",
+    "text-davinci-001": "r50k_base",
+    "text-curie-001": "r50k_base",
+
+
+但是gpt-4o随着编码集的提升，对应的语言的token数量都有所优化减少，特别是小语种优化的程度更多。
 
 通过引用两个测试集合，来验证对中文简体和中文繁体的测试，来验证相应的结果。
 
