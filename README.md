@@ -9,6 +9,8 @@ against your python environment.
 
 可以得到，最新的embedding 模型也是cl100k_base.
 
+[tiktokne-model-encoding](https://github.com/openai/tiktoken/blob/main/tiktoken/model.py#L20)
+
 MODEL_TO_ENCODING: dict[str, str] = {
 
     # chat
