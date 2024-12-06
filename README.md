@@ -5,7 +5,7 @@
 <img width="743" alt="Chinese_Tokenizer" src="https://github.com/user-attachments/assets/770f20c9-9fbb-44c1-b3ea-dd9d5ee1aa1c">
 
 从图片中我们可以看出o200k_base对中文优化了很多。
-其中对一个token：
+其中对应token：
 
 token1： 你好
 
