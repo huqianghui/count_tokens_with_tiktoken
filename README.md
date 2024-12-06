@@ -2,6 +2,21 @@
 
 相比较于gpt3.5 和gpt-4-turbo，gpt-4o模型，很重要的一个更新就是变更了编码集。
 从原来的cl100k_base 变成了o200k_base。
+<img width="743" alt="Chinese_Tokenizer" src="https://github.com/user-attachments/assets/770f20c9-9fbb-44c1-b3ea-dd9d5ee1aa1c">
+
+从图片中我们可以看出o200k_base对中文优化了很多。
+其中对一个token：
+
+token1： 你好
+
+token2： 世界
+
+token3： ，你
+
+token4： 叫什么
+
+token 5： 名字。
+
 
 Try a pip install --upgrade tiktoken 
 
